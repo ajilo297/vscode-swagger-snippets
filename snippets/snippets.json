@@ -1,1 +1,90 @@
-{}
+{
+    "Basic Route endpoint snippet": {
+        "prefix": "sroute",
+        "body": [
+            "/${1:api}:",
+            "  ${2:get}:",
+            "    description: ${3:Describe this route}",
+            "    summary: ${3:Describe this route}",
+            "    responses:",
+            "      ${0}"
+        ],
+        "description": "Snippet to generate a Route"
+    },
+    "Response with content": {
+        "prefix": "sresp",
+        "body": [
+            "${1:200}:",
+            "  description: ${2:Description}",
+            "  content: ",
+            "    application/json:",
+            "      schema:",
+            "        ${0}"
+        ],
+        "description": "Response with content"
+    },
+    "Parameters": {
+        "prefix": "sparam",
+        "body": [
+            "- in: ${1:path}",
+            "  name: ${2:name}",
+            "  description: ${3:description}",
+            "  required: ${4:false}",
+            "  schema:",
+            "    type: ${5:string}"
+        ],
+        "description": "Parameter object"
+    },
+    "Initialize": {
+        "prefix": "sinit",
+        "body": [
+            "openapi: 3.0.0",
+            "",
+            "info:",
+            "  title: ${1}",
+            "  description: ${2}",
+            "  version: ${3}",
+            "  contact:",
+            "    name: ${4:Example}",
+            "    email: ${5:example@example.com}",
+            "",
+            "servers:",
+            "  - url: ${6}",
+            "    description: ${7}",
+            "",
+            "paths:",
+            "  ${0}"
+        ],
+        "description": "Initialize a Swagger file"
+    },
+    "Reference Object": {
+        "prefix": "sref",
+        "body": [
+            "$$ref: '#/components/${1:schemas}/${3:Object}'"
+        ],
+        "description": "Generate snippet for a `$ref` object"
+    },
+    "Header object": {
+        "prefix": "sheader",
+        "body": [
+            "headers:",
+            "  ${1:Name}:",
+            "    description: ${2: Description}",
+            "    schema:",
+            "      type: ${3:string}"
+        ],
+        "description": "Generate Header Object"
+    },
+    "Request Body": {
+        "prefix": "sreqbody",
+        "body": [
+            "requestBody:",
+            "  required: ${1:false}",
+            "  content:",
+            "    ${2:application/json}:",
+            "      schema:",
+            "        ${0}"
+        ],
+        "description": "Generate Request Body snippet"
+    }
+}
