@@ -1,0 +1,20 @@
+{
+    "name": "swagger-snippets",
+    "displayName": "Swagger Snippets",
+    "description": "Generate OAS 3.0 compliant code snippets in YAML",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.32.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "yaml",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
