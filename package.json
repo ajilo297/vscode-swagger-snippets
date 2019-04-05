@@ -9,12 +9,16 @@
     "categories": [
         "Snippets"
     ],
+    "icon": "images/logo.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ajilo297/vscode-swagger-snippets.git"
+    },
+    "publisher": "adisreyaj",
     "contributes": {
-        "snippets": [
-            {
-                "language": "yaml",
-                "path": "./snippets/snippets.json"
-            }
-        ]
+        "snippets": [{
+            "language": "yaml",
+            "path": "./snippets/snippets.json"
+        }]
     }
 }

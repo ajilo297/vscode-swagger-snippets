@@ -1,6 +1,6 @@
 {
     "OAS 3.0": {
-        "prefix": "soas",
+        "prefix": "swaoas",
         "body": [
             "openapi: 3.0.0",
             "",
@@ -22,7 +22,7 @@
         "description": "Initialize a OAS 3.0 file"
     },
     "Basic Path snippet": {
-        "prefix": "spath",
+        "prefix": "swapath",
         "body": [
             "/${1:api}:",
             "  ${2:get}:",
@@ -34,7 +34,7 @@
         "description": "Snippet to generate a Basic Path"
     },
     "Path Snippet with Parameters": {
-        "prefix": "spathparam",
+        "prefix": "swapathparam",
         "body": [
             "/${1:api}/${2:id}:",
             "  ${3:get}:",
@@ -53,7 +53,7 @@
         "description": "Snippet to generate a Path with parameters"
     },
     "Response object": {
-        "prefix": "sresp",
+        "prefix": "swaresp",
         "body": [
             "${1:200}:",
             "  description: ${2:Description}",
@@ -65,7 +65,7 @@
         "description": "Response with content"
     },
     "Parameter object": {
-        "prefix": "sparam",
+        "prefix": "swaparam",
         "body": [
             "- in: ${1:path}",
             "  name: ${2:name}",
@@ -77,7 +77,7 @@
         "description": "Parameter object"
     },
     "Request Body object": {
-        "prefix": "sreqbody",
+        "prefix": "swareqbody",
         "body": [
             "requestBody:",
             "  required: ${1:false}",
@@ -89,7 +89,7 @@
         "description": "Generate Request Body snippet"
     },
     "Header object": {
-        "prefix": "sheader",
+        "prefix": "swaheader",
         "body": [
             "headers:",
             "  ${1:Name}:",
@@ -99,15 +99,8 @@
         ],
         "description": "Generate Header Object"
     },
-    "Reference Object": {
-        "prefix": "sref",
-        "body": [
-            "$$ref: '#/components/${1:schemas}/${3:Object}'${0}"
-        ],
-        "description": "Generate snippet for a `$ref` object"
-    },
     "Object Property Snippet": {
-        "prefix": "sobj",
+        "prefix": "swaobj",
         "body": [
             "type: object",
             "properties:",
@@ -118,7 +111,7 @@
         "description": "Generate a deprecated operation"
     },
     "String Property Snippet": {
-        "prefix": "sstr",
+        "prefix": "swastr",
         "body": [
             "type: string",
             "example: ${1:example}"
@@ -131,5 +124,5 @@
             "deprecated: ${1: true}${0}"
         ],
         "description": "Generate a deprecated operation"
-    },
+    }
 }
