@@ -8,6 +8,21 @@ Describe specific features of your extension including screenshots of your exten
 
 For example if there is an image subfolder under your extension project workspace:
 
+### Snippets
+
+| S. No. |   Snippet   | Output                                                                  |
+| ------ | ----------- | ----------------------------------------------------------------------- |
+|    1   | soas        | Adds basic skeleton for a OAS 3.0 file with `Info`, `Server` and `Path` |
+|    2   | spath       | Basic Path Snippet                                                      |
+|    3   | spathparam  | Path Snippet with parameters                                            |
+|    4   | sresp       | Response object snippet                                                 |
+|    5   | sparam      | Parameter object snippet                                                |
+|    6   | sreqbody    | Request body snippet                                                    |
+|    7   | sheader     | Header object snippet                                                   |
+|    8   | sobj        | Object properties snippet                                               |
+|    9   | sstr        | String properties snippet                                               |
+|    10  | sdeprcted   | Deprecated object snippet                                               |
+
 \!\[feature X\]\(images/feature-x.png\)
 
 > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.

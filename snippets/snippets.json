@@ -99,13 +99,6 @@
         ],
         "description": "Generate Header Object"
     },
-    "Reference Object": {
-        "prefix": "sref",
-        "body": [
-            "$$ref: '#/components/${1:schemas}/${3:Object}'${0}"
-        ],
-        "description": "Generate snippet for a `$ref` object"
-    },
     "Object Property Snippet": {
         "prefix": "sobj",
         "body": [
@@ -131,5 +124,5 @@
             "deprecated: ${1: true}${0}"
         ],
         "description": "Generate a deprecated operation"
-    },
+    }
 }
