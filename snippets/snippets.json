@@ -1,6 +1,28 @@
 {
-    "Basic Route endpoint snippet": {
-        "prefix": "sroute",
+    "Initialize": {
+        "prefix": "soas",
+        "body": [
+            "openapi: 3.0.0",
+            "",
+            "info:",
+            "  title: ${1}",
+            "  description: ${2}",
+            "  version: ${3}",
+            "  contact:",
+            "    name: ${4:Example}",
+            "    email: ${5:example@example.com}",
+            "",
+            "servers:",
+            "  - url: ${6}",
+            "    description: ${7}",
+            "",
+            "paths:",
+            "  ${0}"
+        ],
+        "description": "Initialize a Swagger file"
+    },
+    "Basic Path snippet": {
+        "prefix": "spath",
         "body": [
             "/${1:api}:",
             "  ${2:get}:",
@@ -9,7 +31,26 @@
             "    responses:",
             "      ${0}"
         ],
-        "description": "Snippet to generate a Route"
+        "description": "Snippet to generate a Path"
+    },
+    "Path Snippet with Parameters": {
+        "prefix": "spathparam",
+        "body": [
+            "/${1:api}/${2:id}:",
+            "  ${3:get}:",
+            "    description: ${4:Describe this route}",
+            "    summary: ${4:Describe this route}",
+            "    parameters:",
+            "      - in: ${5:path}",
+            "        name: ${2:id}",
+            "        required: ${6: true}",
+            "        description: ${7: description}",
+            "        schema:",
+            "          type: ${8: string}",
+            "    responses:",
+            "      ${0}"
+        ],
+        "description": "Snippet to generate a Path with parameters"
     },
     "Response with content": {
         "prefix": "sresp",
@@ -35,27 +76,17 @@
         ],
         "description": "Parameter object"
     },
-    "Initialize": {
-        "prefix": "sinit",
+    "Request Body": {
+        "prefix": "sreqbody",
         "body": [
-            "openapi: 3.0.0",
-            "",
-            "info:",
-            "  title: ${1}",
-            "  description: ${2}",
-            "  version: ${3}",
-            "  contact:",
-            "    name: ${4:Example}",
-            "    email: ${5:example@example.com}",
-            "",
-            "servers:",
-            "  - url: ${6}",
-            "    description: ${7}",
-            "",
-            "paths:",
-            "  ${0}"
+            "requestBody:",
+            "  required: ${1:false}",
+            "  content:",
+            "    ${2:application/json}:",
+            "      schema:",
+            "        ${0}"
         ],
-        "description": "Initialize a Swagger file"
+        "description": "Generate Request Body snippet"
     },
     "Reference Object": {
         "prefix": "sref",
@@ -75,16 +106,11 @@
         ],
         "description": "Generate Header Object"
     },
-    "Request Body": {
-        "prefix": "sreqbody",
+    "Deprecated Object": {
+        "prefix": "sdeprcted",
         "body": [
-            "requestBody:",
-            "  required: ${1:false}",
-            "  content:",
-            "    ${2:application/json}:",
-            "      schema:",
-            "        ${0}"
+            "deprecated: ${1: true}"
         ],
-        "description": "Generate Request Body snippet"
+        "description": "Generate a deprecated operation"
     }
 }
