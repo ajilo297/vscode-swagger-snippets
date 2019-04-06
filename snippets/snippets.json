@@ -104,9 +104,9 @@
         "body": [
             "type: object",
             "properties:",
-            "  name:",
-            "    type: ${1:string}",
-            "    example: ${2:example}"
+            "  ${1:name}:",
+            "    type: ${2:string}",
+            "    example: ${3:example}"
         ],
         "description": "Generate a deprecated operation"
     },
