@@ -119,7 +119,7 @@
         "description": "Generate a deprecated operation"
     },
     "Deprecated Object": {
-        "prefix": "sdeprcted",
+        "prefix": "swadeprcted",
         "body": [
             "deprecated: ${1: true}${0}"
         ],
