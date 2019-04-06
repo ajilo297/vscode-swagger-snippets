@@ -1,80 +1,35 @@
-# swagger-snippets README
+# Swagger Snippets
 
-This is the README for your extension "swagger-snippets". After writing up a brief description, we recommend including the following sections.
+![Swagger Snippets](images/logo.png)
 
-## Features
+VSCode Snippets for writin OAS 3.0 compliant code snippets in YAML.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## See it in action
 
-For example if there is an image subfolder under your extension project workspace:
+![Swagger Snippets](images/swagger-snippets.gif)
 
-### Snippets
+## Installation
 
-| S. No. |   Snippet   | Output                                                                  |
-| ------ | ----------- | ----------------------------------------------------------------------- |
-|    1   | soas        | Adds basic skeleton for a OAS 3.0 file with `Info`, `Server` and `Path` |
-|    2   | spath       | Basic Path Snippet                                                      |
-|    3   | spathparam  | Path Snippet with parameters                                            |
-|    4   | sresp       | Response object snippet                                                 |
-|    5   | sparam      | Parameter object snippet                                                |
-|    6   | sreqbody    | Request body snippet                                                    |
-|    7   | sheader     | Header object snippet                                                   |
-|    8   | sobj        | Object properties snippet                                               |
-|    9   | sstr        | String properties snippet                                               |
-|    10  | sdeprcted   | Deprecated object snippet                                               |
+1. Open **Extensions** sidebar panel in Visual Studio Code. `View → Extensions`
+1. Search for `Swagger Snippets`
+1. Click **Install**
+1. When in YAML file just type in `swa` and you can see the snippet suggestions.
 
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+**Note** If suggestions are not showing try pressing `Ctlr + Space`
 
 **Enjoy!**
+
+## Available Snippets
+
+| S. No. |    Snippet    | Output                                                                  |
+| ------ | ------------- | ----------------------------------------------------------------------- |
+|    1   | swaoas        | Adds basic skeleton for a OAS 3.0 file with `Info`, `Server` and `Path` |
+|    2   | swapath       | Basic Path Snippet                                                      |
+|    3   | swapathparam  | Path Snippet with parameters                                            |
+|    4   | swaresp       | Response object snippet                                                 |
+|    5   | swaparam      | Parameter object snippet                                                |
+|    6   | swareqbody    | Request body snippet                                                    |
+|    7   | swaheader     | Header object snippet                                                   |
+|    8   | swaobj        | Object properties snippet                                               |
+|    9   | swastr        | String properties snippet                                               |
+|    10  | swadeprcted   | Deprecated object snippet                                               |
